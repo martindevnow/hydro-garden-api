@@ -24,4 +24,4 @@ COPY --from=builder /home/node/yarn.lock /home/node/
 COPY --from=builder /home/node/node_modules/ /home/node/node_modules/
 COPY --from=builder /home/node/dist/ /home/node/dist/
 
-CMD ["node", "dist/server.js"]
+CMD ["node", "dist/main.js"]
